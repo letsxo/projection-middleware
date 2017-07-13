@@ -26,7 +26,7 @@ module.exports = function(validFields) {
       projection[field] = 1;
     });
 
-    req._projection = projection;
+    req.projection = projection;
 
     return next();
   };
